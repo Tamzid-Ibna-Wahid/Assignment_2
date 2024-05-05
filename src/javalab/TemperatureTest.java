@@ -1,18 +1,18 @@
-package javaLab;
+package javalab;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
 
 class TemperatureTest {
 
-    Temperature passenger1,passenger2,driver1,driver2;
+    Temperature passenger1, passenger2, driver1, driver2;
 
     @BeforeEach
     void setup(){
         passenger1 = new Temperature();
-        passenger2 = new Temperature(60,70);
-        driver1 = new Temperature(30,40);
-        driver2 = new Temperature(20,40);
+        passenger2 = new Temperature(60, 70);
+        driver1 = new Temperature(30, 40);
+        driver2 = new Temperature(20, 40);
     }
 
     @Test
@@ -21,7 +21,7 @@ class TemperatureTest {
         passenger1.up();
         passenger1.up();
         passenger1.up();
-        assertEquals(49,passenger1.getCurrentTemperature());
+        assertEquals(49, passenger1.getCurrentTemperature());
     }
     @Test
     void temperature2() {
@@ -29,7 +29,7 @@ class TemperatureTest {
         passenger2.up();
         passenger2.down();
         passenger2.down();
-        assertEquals(65,passenger2.getCurrentTemperature());
+        assertEquals(65, passenger2.getCurrentTemperature());
     }
 
     @Test
@@ -38,7 +38,7 @@ class TemperatureTest {
         driver1.up();
         driver1.up();
         driver1.down();
-        assertEquals(37,driver1.getCurrentTemperature());
+        assertEquals(37, driver1.getCurrentTemperature());
     }
     @Test
     void temperature4() {
@@ -46,7 +46,7 @@ class TemperatureTest {
         driver2.up();
         driver2.down();
         driver2.down();
-        assertEquals(30,driver2.getCurrentTemperature());
+        assertEquals(30, driver2.getCurrentTemperature());
     }
 
 

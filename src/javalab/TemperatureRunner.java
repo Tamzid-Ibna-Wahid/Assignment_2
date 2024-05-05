@@ -1,4 +1,4 @@
-package javaLab;
+package javalab;
 
 public class TemperatureRunner {
     public static void main(String[] args) {

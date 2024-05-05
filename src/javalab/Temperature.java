@@ -1,4 +1,4 @@
-package javaLab;
+package javalab;
 
 public class Temperature {
 
@@ -17,13 +17,12 @@ public class Temperature {
     private void calculateTemperature()
     {
         currentTemperature = (minTemperature + maxTemperature) / 2;
-//        System.out.println(currentTemperature);
     }
     public void up(){
-        currentTemperature = Math.min(maxTemperature,currentTemperature+1);
+        currentTemperature = Math.min(maxTemperature, currentTemperature+1);
     }
     public void down(){
-        currentTemperature = Math.max(minTemperature,currentTemperature-1);
+        currentTemperature = Math.max(minTemperature, currentTemperature-1);
     }
     public int getCurrentTemperature(){
         return currentTemperature;
